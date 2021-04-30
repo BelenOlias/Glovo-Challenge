@@ -53,31 +53,31 @@ window.addEventListener('load', () => {
                 })
 
                 alcoholic.forEach(elm => {
-                    let a = ''
+                    let ingredientsText = ''
                     let ing = elm.ingredients
                     for (let prop in ing) {
-                        a += `${prop} - ${ing[prop]}<br> `
+                        ingredientsText += `${prop} - ${ing[prop]}<br> `
                     }
 
                     text1 += `<ul>
                 <li>Name: ${elm.strDrink}</li>
                 <li>Id: ${elm.idDrink}</li>
-                <li>Ingredients: ${a} </li>
+                <li>Ingredients: ${ingredientsText} </li>
                 </ul>`
                 })
 
             
                 nonAlcoholic.forEach(elm => {
-                    let a = ''
+                    let ingredientsText = ''
                     let ing = elm.ingredients
                     for (let prop in ing) {
-                        a += `${prop} - ${ing[prop]}<br> `
+                        ingredientsText += `${prop} - ${ing[prop]}<br> `
                     }
                     
                     text2 += `<ul>
                 <li>${elm.strDrink}</li>
                 <li>${elm.idDrink}</li>
-                <li>Ingredients: ${a}</li>
+                <li>Ingredients: ${ingredientsText}</li>
                 </ul>`
                 })
             
